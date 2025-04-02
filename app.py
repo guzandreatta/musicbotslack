@@ -10,7 +10,7 @@ app = Flask(__name__)
 SLACK_BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
 SLACK_SIGNING_SECRET = os.getenv("SLACK_SIGNING_SECRET")  # Por si querés validar firmas
 HEADERS = {
-    "Authorization": f"Bearer {SLACK_BOT_TOKEN}",
+    "Authorization": "Bearer {SLACK_BOT_TOKEN}",
     "Content-type": "application/json"
 }
 
